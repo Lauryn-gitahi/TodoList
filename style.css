@@ -5,7 +5,7 @@
     overflow: hidden;
 }
 
-body{
+section {
     width:100%;
     height: 100vh;
     background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80");
@@ -16,10 +16,12 @@ body{
     -o-background-size: cover;
 }
 
+
 nav{
    
     background: rgb(184, 184, 194);
     height: 10vh;
+    z-index: 2;
 }
 
 .logo{
@@ -38,7 +40,7 @@ nav{
     height: 100%;
     padding: 12px 5px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     margin-left: auto;
 }
 
@@ -46,10 +48,10 @@ nav{
     width: 30%; 
     height:35px;
     color: black;
-    font-size:15px;
+    font-size:17px;
+    font-weight: lighter;
     list-style: none;
     text-decoration: none;
-    font-size:16px;
     padding: 12px 12px;
 }
 
@@ -90,7 +92,7 @@ nav{
             width: 40%;
             padding: 10px 10px;
           }
-        
+
         .line{
             width:30px;
             height:3px;
@@ -109,6 +111,8 @@ nav{
             transform: translate(-5%,-50%);
             z-index: 2;
         }
+      
+    
         .nav-links{
             position:fixed;
             background: grey ;
@@ -170,7 +174,7 @@ input{
     height:50px;
     border-right: none;
     padding: 12px;
-    background: #167272;
+    background: rgba(63, 111, 126, 0.767);
     border: none;
     color: white;
     outline: none;
@@ -183,7 +187,7 @@ input{
     width: 40px;
     height:50px;
     padding: 0;
-    background: brown;
+    background: rgba(163, 108, 108, 0.9);
     margin:0;
     color: white;
     border: none;
@@ -203,7 +207,8 @@ input{
     height:50px;
     border-right: none;
     padding: 12px;
-    background: #167272;
+    /* background: #6dadad; */
+    background: rgba(63, 111, 126, 0.9);
     border: none;
     color: white;
     outline: none;
@@ -224,17 +229,16 @@ input{
   }
 
   .deleteBtn{
-      background: turquoise;
+      background: rgba(64, 224, 208, 0.9);
       color: red;
   }
 
   .checkBtn{
-      background: rgb(82, 98, 185);
+      background: rgba(82, 98, 185, 0.9);
       color: black;
   }
 
   .completed  {
-     /* background-color: indianred; */
      text-decoration: line-through;
      opacity: 0.5;
   }
@@ -259,14 +263,14 @@ select{
     padding: 1rem;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
-    background: #167272;
+    background: rgba(63, 111, 126, 0.767);
     outline: none;
 }
 
 .select::after{
     content: "\25BC";
     position: absolute;
-    background: indianred;
+    background: rgba(205, 92, 92, 0.8);
     top:0;
     right: 0;
     padding: 1rem;
@@ -274,7 +278,7 @@ select{
 }
 
 .select:hover::after{
-    background: lightsalmon;
-    color: lightcoral;
+    background: rgb(90, 96, 155);
+    /* color: whitesmoke; */
 }
 
